@@ -3,6 +3,9 @@
     package="com.example.advanceandroid">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -13,20 +16,30 @@
         android:theme="@style/Theme.AdvanceAndroid"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".payment_razorpay.PaymentActivity"
-            android:exported="true" >
+            android:name=".boardcast_receiver.SMSActivity"
+            android:exported="true">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
         <activity
-            android:name=".audio_related.AudioRelatedActivity"
+            android:name=".boardcast_receiver.BroadcastActivity"
             android:exported="true">
 
         </activity>
         <activity
+            android:name=".payment_razorpay.PaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".audio_related.AudioRelatedActivity"
+            android:exported="true" />
+        <activity
             android:name=".sensor.MySensorActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".video_related.ExoPlayerActivity"
             android:configChanges="orientation|screenSize"
@@ -36,15 +49,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

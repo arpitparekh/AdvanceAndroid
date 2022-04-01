@@ -4,11 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_audio_related.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_broadcast.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_exo_player.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_sensor.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_my_video.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_payment.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_smsactivity.xml" value="0.26197916666666665" />
       </map>
     </option>
   </component>
