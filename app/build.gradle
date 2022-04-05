@@ -52,4 +52,10 @@ dependencies {
 
     //razorPay
     implementation 'com.razorpay:checkout:1.6.18'
+
+    //fingerPrint
+    implementation 'androidx.biometric:biometric:1.1.0'
+
+    //paytm
+    implementation 'com.paytm.appinvokesdk:appinvokesdk:1.6.8'
 }

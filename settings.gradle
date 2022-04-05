@@ -3,6 +3,11 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven {
+            url "https://artifactory.paytm.in/libs-release-local"
+        }
+
     }
 }
 dependencyResolutionManagement {

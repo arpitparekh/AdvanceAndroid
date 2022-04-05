@@ -27,7 +27,8 @@ public class SmsReceiver extends BroadcastReceiver {
             for(SmsMessage sms : messages){
 
                 String msg = sms.getMessageBody();
-                String otp = msg.split(": ")[1];
+
+                String otp  = msg.replaceAll("[^0-9]", "");
 
                 Log.i("msg",otp);
 
