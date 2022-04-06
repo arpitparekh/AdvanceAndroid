@@ -22,18 +22,22 @@
         <activity
             android:name=".notification.ShowNotificationActivity"
             android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".fingerprint_unlock.FingerPrintActivity"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
-            android:name=".fingerprint_unlock.FingerPrintActivity"
-            android:exported="true" />
-        <activity
             android:name=".boardcast_receiver.SMSActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".boardcast_receiver.BroadcastActivity"
             android:exported="true" />
